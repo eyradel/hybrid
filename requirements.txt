@@ -1,0 +1,4 @@
+cx_Freeze==6.11.1
+numpy==1.22.3
+opencv_python_headless==4.5.4.60
+streamlit==1.10.0
