@@ -23,7 +23,7 @@ print(classes)
 
 while run:
     sucess,frame =video.read()
-    #frame = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
+    frame = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
     (class_ids,scores,bboxes) = model.detect(frame)
     for class_id,score,bbox in zip(class_ids,scores,bboxes):
         (x,y,w,h) = bbox
